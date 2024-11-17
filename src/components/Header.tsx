@@ -11,9 +11,9 @@ export function Header() {
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">ET</span>
+                <span className="text-white font-bold">TQ</span>
               </div>
-              <span className="font-bold text-lg text-white">ErrorTracker</span>
+              <span className="font-bold text-lg text-white">TracelQ</span>
             </div>
             <ProjectSelector />
             <div className="relative">
