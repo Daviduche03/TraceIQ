@@ -33,7 +33,7 @@ TraceIQ is a powerful, open-source error tracking system designed to help develo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/TraceIQ.git
+git clone https://github.com/daviduche03/TraceIQ.git
 cd TraceIQ
 ```
 
