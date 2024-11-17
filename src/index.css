@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#0A0A0A];
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1A1A1A];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#2A2A2A] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#333];
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom animation for notifications */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* Supabase Auth UI customization */
+.supabase-container {
+  @apply space-y-4;
+}
+
+.supabase-button {
+  @apply w-full px-4 py-2 text-white bg-indigo-500 rounded-lg hover:bg-indigo-600 transition-colors !important;
+}
+
+.supabase-input {
+  @apply w-full px-4 py-2 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 !important;
+}
